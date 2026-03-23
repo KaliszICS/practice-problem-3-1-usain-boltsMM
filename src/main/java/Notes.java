@@ -15,14 +15,14 @@ class Notes {
 		int num;
 
 		System.out.print("Input a number greater than 5: ");
-		num = input.nextInt();
+        num = input.nextInt();
 
-		//if (boolean expression) {}
-		//do not put a semi colon after your if statement
+		//if (boolean expression)
+		
 		if (num > 5) {
-			//This area only runs when the boolean value is true
+			//This code will only run when the condition above is true
 			System.out.println(num + " is greater than 5");
-			// System.out.println("line 2");
+			num = num + 5;
 		}
 
 		if (num < 5) {
@@ -30,19 +30,19 @@ class Notes {
 		}
 
 		System.out.println("Rest of our code");
-
+		System.out.println(num);
+		
 		String word;
-		word = "Bye";
-		
-		if (word.equals("Bye")) {
-			System.out.println(word + " is equal to Bye");
-			String word2; //local variable - only exists in this if statement
-			word2 = "Bye";
-			System.out.println(word.equals(word2));
-		}
+        word = "Bye";
+        
+        if (word.equals("Bye")) {
+            System.out.println(word + " is equal to Bye");
+            String word2; //local variable - only exists in this if statement
+            word2 = "Bye";
+            System.out.println(word.equals(word2));
+        }
 
-		// System.out.println(word2); //can't use word2, becuase it was local to the if statement and does not exist as far as java is concerned here.
+		// System.out.println(word2);
 
-		
 	}
 }
